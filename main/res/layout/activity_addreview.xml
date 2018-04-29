@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="10dp"
+        android:background="@color/grayShade2"
+        android:id="@+id/userBarMainRL">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userBarTitle"
+            android:textSize="18dp"
+            android:textColor="#f2f2f2"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/userBarProfilePicture"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="#f2f2f2"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:id="@+id/userBarUsername"
+            android:layout_toRightOf="@+id/userBarProfilePicture"
+            android:layout_toLeftOf="@+id/userBarTitle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textSize="14dp"
+            android:textColor="#f2f2f2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:id="@+id/userBarLogout"
+            android:text="logout"
+            />
+    </RelativeLayout>
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:numStars="5"
+        android:id="@+id/addReviewRating"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="Review"
+        android:id="@+id/addReviewReview"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Add Review"
+        android:textColor="@color/whiteShade1"
+        android:id="@+id/addReviewAddButton"
+        android:layout_marginTop="30dp"
+        android:background="@color/blueShade1"
+        />
+
+</LinearLayout>

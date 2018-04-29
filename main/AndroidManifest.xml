@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.el.cloudproject">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.el.cloudproject.FirebaseConnectivity">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".ActivityLoginSignup">
+
+        </activity>
+
+        <activity android:name=".ActivityAddRoom">
+
+        </activity>
+
+        <activity android:name=".ActivityUserHome">
+
+        </activity>
+        <activity android:name=".ActivityViewRooms">
+        </activity>
+        <activity android:name=".ActivitySingleRoom">
+
+        </activity>
+
+
+        <activity android:name=".ActivityAddReview">
+
+        </activity>
+
+        <activity android:name=".ActivityUpateProfile">
+
+        </activity>
+
+        <activity android:name=".ActivityViewUsers">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
